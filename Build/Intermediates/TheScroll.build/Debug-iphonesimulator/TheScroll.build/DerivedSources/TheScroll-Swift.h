@@ -135,13 +135,16 @@ SWIFT_CLASS("_TtC9TheScroll11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UIScrollView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9TheScroll14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, copy) NSArray<UIImageView *> * _Nonnull images;
+@property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollview;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
